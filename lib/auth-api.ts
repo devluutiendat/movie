@@ -1,4 +1,4 @@
-import { User } from "@/types/types";
+import { User } from "@/types/user";
 import * as SecureStore from "expo-secure-store";
 
 export async function login (email: string, password: string ): Promise<boolean> {
@@ -31,7 +31,6 @@ export async function logout(): Promise<void> {
     console.error("Failed to log out:", error);
   }
 }
-
 
 export async function getCurrentUser():Promise<User|null> {
   try {

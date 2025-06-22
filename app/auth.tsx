@@ -1,6 +1,6 @@
 import icons from "@/constants/icons";
 import image from "@/constants/image";
-import { login } from "@/lib/api";
+import { login } from "@/lib/auth-api";
 import { useGlobalContext } from "@/lib/global-provider";
 import { useMutation } from "@tanstack/react-query";
 import { Redirect } from "expo-router";

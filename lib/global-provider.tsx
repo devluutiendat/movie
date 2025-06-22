@@ -1,8 +1,8 @@
 import React, { createContext, ReactNode, useContext } from "react";
 
-import { User } from "@/types/types";
+import { User } from "@/types/user";
 import { useQuery } from "@tanstack/react-query";
-import { getCurrentUser } from "./api";
+import { getCurrentUser } from "./auth-api";
 
 interface GlobalContextType {
   isLogged: boolean;
