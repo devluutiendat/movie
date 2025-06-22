@@ -35,6 +35,10 @@ export default function RootLayout() {
             <RouteGuard>
               <Stack screenOptions={{ headerShown: false }}>
                 <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+                <Stack.Screen
+                  name="detail/[id]"
+                  options={{ headerShown: false }}
+                />
               </Stack>
             </RouteGuard>
           </SafeAreaProvider>

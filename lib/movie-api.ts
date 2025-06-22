@@ -27,7 +27,6 @@ export const TMDB_CONFIG = {
       throw new Error(`Failed to fetch movies: ${response.statusText}`);
     }
   
-    console.log("this is query:" + query);
     
     const data = await response.json();
     return data.results;
@@ -50,6 +49,7 @@ export const TMDB_CONFIG = {
       }
   
       const data = await response.json();
+      
       return data;
     } catch (error) {
       console.error("Error fetching movie details:", error);
